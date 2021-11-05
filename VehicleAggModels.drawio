@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-05T09:44:22.123Z" agent="5.0 (X11)" etag="2zc_v_kH_KT-6_AZIPkE" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-05T09:48:34.846Z" agent="5.0 (X11)" etag="t_cvWuB_4SM1aePmfuzT" version="15.6.8" type="github">
   <diagram id="ArGW7IDya43heI2d5whR" name="Page-1">
     <mxGraphModel dx="1819" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -169,10 +169,10 @@
         <mxCell id="jDXTL4kX9GD-vCOHamEt-70" value="vehicle: Vehicle" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
           <mxGeometry y="60" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jDXTL4kX9GD-vCOHamEt-71" value="start: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
+        <mxCell id="jDXTL4kX9GD-vCOHamEt-71" value="start_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
           <mxGeometry y="90" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jDXTL4kX9GD-vCOHamEt-72" value="end: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
+        <mxCell id="jDXTL4kX9GD-vCOHamEt-72" value="end_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
           <mxGeometry y="120" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jDXTL4kX9GD-vCOHamEt-87" value="status:TripStatus" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-68" vertex="1">
