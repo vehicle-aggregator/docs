@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-05T10:11:24.540Z" agent="5.0 (X11)" etag="SnMVP_4CD4SKbXvgu8vW" version="15.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-05T10:44:48.308Z" agent="5.0 (X11)" etag="TPg1WMTENqsdwGpdbb9V" version="15.6.8" type="github">
   <diagram id="ArGW7IDya43heI2d5whR" name="Page-1">
     <mxGraphModel dx="1819" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -57,13 +57,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jDXTL4kX9GD-vCOHamEt-29" value="Moderator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="-420" y="355" width="140" height="90" as="geometry" />
+          <mxGeometry x="-420" y="355" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jDXTL4kX9GD-vCOHamEt-30" value="username: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-29" vertex="1">
+        <mxCell id="jDXTL4kX9GD-vCOHamEt-30" value="account:Account" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-29" vertex="1">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="jDXTL4kX9GD-vCOHamEt-31" value="hashed_password: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" parent="jDXTL4kX9GD-vCOHamEt-29" vertex="1">
-          <mxGeometry y="60" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jDXTL4kX9GD-vCOHamEt-34" value="CompanyApprovement" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="-170" y="168" width="170" height="150" as="geometry" />
@@ -383,6 +380,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="10" y="380" as="sourcePoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="atfgpZ-5ebNzYxhqKIcK-4" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.024;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamondThin;startFill=0;startSize=12;endArrow=none;endFill=0;" edge="1" parent="1" source="jDXTL4kX9GD-vCOHamEt-30" target="jDXTL4kX9GD-vCOHamEt-128">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
