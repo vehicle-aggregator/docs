@@ -1,0 +1,312 @@
+basePath: /api/v1
+definitions:
+  database.BusinessUser:
+    properties:
+      accountB:
+        type: integer
+      createdAt:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      id:
+        type: integer
+      updatedAt:
+        type: string
+    type: object
+  database.Company:
+    properties:
+      blocked:
+        type: boolean
+      createdAt:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      id:
+        type: integer
+      moderated:
+        type: boolean
+      name:
+        type: string
+      owner:
+        type: integer
+      updatedAt:
+        type: string
+    type: object
+  database.User:
+    properties:
+      birthday:
+        type: string
+      createdAt:
+        type: string
+      deletedAt:
+        $ref: '#/definitions/gorm.DeletedAt'
+      email:
+        type: string
+      gender:
+        type: string
+      id:
+        type: integer
+      last_name:
+        type: string
+      middle_name:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      updatedAt:
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a server of aggregator project.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Aggregator API
+  version: "1.0"
+paths:
+  /business:
+    get:
+      consumes:
+      - application/json
+      description: get all business
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.BusinessUser'
+      summary: Show a business list
+      tags:
+      - business
+  /business/{id}:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.BusinessUser'
+      summary: Show a business
+      tags:
+      - business
+  /business/ban/{id}:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Ban a business
+      tags:
+      - business
+  /business/create:
+    post:
+      consumes:
+      - application/json
+      description: create new business
+      parameters:
+      - description: id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Show a business
+      tags:
+      - business
+  /company:
+    get:
+      consumes:
+      - application/json
+      description: get all company
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.Company'
+      summary: Show a company list
+      tags:
+      - company
+  /company/{id}:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.Company'
+      summary: Show a company
+      tags:
+      - company
+  /company/ban/{id}:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: id
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Ban a company
+      tags:
+      - company
+  /company/create:
+    post:
+      consumes:
+      - application/json
+      description: create new company
+      parameters:
+      - description: name
+        in: query
+        name: name
+        required: true
+        type: string
+      - description: owner
+        in: query
+        name: owner
+        required: true
+        type: integer
+      - description: moderated
+        in: query
+        name: moderated
+        required: true
+        type: boolean
+      - description: block
+        in: query
+        name: block
+        required: true
+        type: boolean
+      - description: documents
+        in: query
+        name: documents
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ""
+      summary: Create a company
+      tags:
+      - company
+  /login:
+    post:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: email
+        in: query
+        name: email
+        required: true
+        type: string
+      - description: password
+        in: query
+        name: password
+        required: true
+        type: string
+      - description: lastname
+        in: query
+        name: lastname
+        required: true
+        type: string
+      - description: middlename
+        in: query
+        name: middlename
+        required: true
+        type: string
+      - description: birthday
+        in: query
+        name: birthday
+        required: true
+        type: string
+      - description: gender
+        in: query
+        name: gender
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Create an account
+      tags:
+      - accounts
+  /user/{id}:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      parameters:
+      - description: Account ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/database.User'
+      summary: Show an account
+      tags:
+      - accounts
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
