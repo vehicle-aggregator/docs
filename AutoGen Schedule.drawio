@@ -1,1 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2022-04-05T18:10:02.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" version="17.4.0" etag="B-d0iR_Onx2xY1V16bg2" type="github"><diagram id="KSlM8ixrprC--nnQhe1v">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-05T20:43:38.104Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36" etag="abElaM7nxMuxVd_xiA_U" version="17.4.0" type="github">
+  <diagram id="KSlM8ixrprC--nnQhe1v" name="Page-1">
+    <mxGraphModel dx="1185" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-1" target="TreBXJFegpdf_-y2Y7aG-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-1" value="Проверить текущее время" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-2" target="TreBXJFegpdf_-y2Y7aG-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-2" target="TreBXJFegpdf_-y2Y7aG-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="170" />
+              <mxPoint x="430" y="220" />
+              <mxPoint x="430" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-2" value="Время &amp;gt; lastsync и день&amp;nbsp;&lt;br&gt;больше чем день&lt;br&gt;lastsync" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-5" target="TreBXJFegpdf_-y2Y7aG-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-5" value="Запустить заполнение расписания" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-7" target="TreBXJFegpdf_-y2Y7aG-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="320" />
+              <mxPoint x="340" y="320" />
+              <mxPoint x="340" y="20" />
+              <mxPoint x="560" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-7" value="Уйти в сон на 15 секунд" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-10" target="TreBXJFegpdf_-y2Y7aG-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-10" value="Обновить lastsync" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TreBXJFegpdf_-y2Y7aG-12" target="TreBXJFegpdf_-y2Y7aG-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="480" />
+              <mxPoint x="830" y="480" />
+              <mxPoint x="830" y="20" />
+              <mxPoint x="560" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TreBXJFegpdf_-y2Y7aG-12" value="Уйти в сон на 15 секунд" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
